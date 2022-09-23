@@ -1,0 +1,25 @@
+body{
+    background-color: aquamarine
+}
+
+.first{
+    color: lightgreen;
+    background-color: grey
+}
+
+.second{
+    color: lightblue;
+    background-color: grey
+
+}
+
+.third{
+    color:lightcoral;
+    background-color: grey
+
+}
+
+footer{
+    color: white;
+    background-color: black;
+}
