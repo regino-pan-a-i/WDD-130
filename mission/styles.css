@@ -1,0 +1,46 @@
+header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: .5em;
+}
+
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #006EB6;
+    font-size: small;
+    letter-spacing: .2rem;
+    border-bottom: 1px solid lightgray;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    font-size: 20px;
+    max-width: 600px;
+    text-align: left;
+    line-height: 1.5;
+    letter-spacing: 0.0625em;
+
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.list {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    max-width: 150px;
+}
