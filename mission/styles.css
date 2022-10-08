@@ -9,7 +9,7 @@ h1 {
     margin-bottom: .5em;
 }
 
-h4 {
+h2 {
     font-family: 'Times New Roman', Times, serif;
     color: #006EB6;
     font-size: small;
@@ -43,4 +43,12 @@ footer{
 
 img{
     max-width: 150px;
+}
+
+.dark{
+    background-color: #333;
+    color: white;
+}
+.dark h2{
+    color: #227fbc
 }
