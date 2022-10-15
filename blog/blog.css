@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+h1, h2 {
+    font-family: 'Alkalami', serif;
+}
+
+header {
+    text-align: center;
+    background-color: #3C6997;
+    color: #F5F1ED;
+    grid-column: 1/ 3;
+}
+nav{
+    background-color: #A63D40;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:.5%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+a{
+    color: #F5F1ED;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav > ul {
+    grid-column: 2/3;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.about, .archive, .search{
+    justify-content: end;
+    justify-items: end;
+    max-width: 33%;
+    margin: 0 auto;
+}
+body {
+    background-color: #B07156;
+    color:#F5F1ED;
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    grid-template-columns: 1fr 25%;
+}
+section {
+    padding-left: .5em;
+    margin: 1em;
+    border: 2px solid #0F084B;
+    border-radius: 5px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+article{
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.info {
+    padding-top: 1em;
+    padding-right: .5em;
+    text-align: end;
+    border-right: solid #0F084B;
+}
+
+.book{
+    padding-left: .5em;
+}
