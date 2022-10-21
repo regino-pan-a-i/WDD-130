@@ -90,3 +90,45 @@ const luckyNumber = 21;
 
 const index = numbers.indexOf(luckyNumber);
 console.log(index);
+
+const meals =[
+    {
+        name: 'Curry',
+        category: 'indian', 
+        prepTime: '20min', 
+        cookTime: '20min',
+        url: 'dom-events.html',
+        imgSrc: "https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
+    },
+    {
+        name: 'Tacos', 
+        category: 'Mexican', 
+        prepTime: '10min', 
+        cookTime: '10min',
+        url: 'dom-events.html',
+        imgSrc: "https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
+    },
+    {
+        name: 'Chicken Alfredo', 
+        category: 'Italian', 
+        perpTime: '10min', 
+        cookTime: '25min',
+        url: 'dom-events.html',
+        imgSrc: "https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
+    }
+];
+
+function mealTemplate(meal){
+    return `<li class="meal-card"><img src="${meal.imgSrc}"><h2>${meal.name}</h2><p class="meal-category">${meal.category}</p>
+    <p>PrepTime: ${meal.prepTime}</p><p>CookTime: ${meal.coolTime}</p></li>`;
+};
+
+function renderMeals(){
+    const htmlMeals = meals.map(mealTemplate);
+    const newUl = document.createElement('ul');
+    newUl.classList.add("meal-list")
+    newUl.insertAdjacentHTML('afterbegin', htmlMeals.join(''));
+    document.querySelector('main').insertAdjacentElement('beforeend', newUl);
+};
+
+renderMeals()
