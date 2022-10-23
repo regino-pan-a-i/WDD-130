@@ -5,6 +5,10 @@ h1, h2 {
     font-family: 'Alkalami', serif;
 }
 
+.date{
+    font-size:large;
+}
+
 header {
     text-align: center;
     background-color: #3C6997;
@@ -17,6 +21,13 @@ nav{
     border-bottom-style: solid;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom:.5%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+main{
     margin-bottom:.5%;
     width: 100%;
     height: auto;
@@ -61,6 +72,7 @@ article{
     padding-top: 1em;
     display: grid;
     grid-template-columns: 25% 75%;
+    margin-bottom: 2em;
 }
 
 .info {
@@ -71,5 +83,13 @@ article{
 }
 
 .book{
-    padding-left: .5em;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.book img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

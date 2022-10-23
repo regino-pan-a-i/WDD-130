@@ -23,5 +23,42 @@ const articles = [
       ages: "12-16",
       genre: "Fantasy",
       stars: "⭐⭐⭐⭐"
+    },
+    {
+      id: 3,
+      title: "The Hunger Games",
+      date: "September 14, 2008",
+      description:
+        "The Hunger Games is a 2008 dystopian novel by the American writer Suzanne Collins. It is written in the perspective of 16-year-old Katniss Everdeen, who lives in the future, post-apocalyptic nation of Panem in North America.",
+      imgSrc:
+        "https://catalog.kentonlibrary.org/opac/extras/ac/jacket/large/r/593617",
+      imgAlt: "Book cover for The Hunger Games",
+      ages: "12-16",
+      genre: "Dystopian, Sci-Fi",
+      stars: "⭐⭐⭐⭐"
     }
   ];
+
+  function articleTemplate(article){
+    return `<div class="info">
+    <p class="date"> ${article.date}</p>
+    <p> ${article.ages}</p>
+    <p> ${article.genre}</p>
+    <p> ${article.stars}</p>
+    </div>
+    <div class="book">
+    <h2> ${article.title}</h2>
+    <img alt="${article.imgAlt}" src="${article.imgSrc}">
+    <p> ${article.description}</p>
+    </div>`;
+  }
+
+  function renderArticle(){
+    const htmlArticle = articles.map(articleTemplate);
+    const newArticle = document.createElement('article');
+    newArticle.classList.add('article1')
+    newArticle.insertAdjacentHTML('afterbegin', htmlArticle.join(''));
+    document.querySelector('main').insertAdjacentElement('beforeend', newArticle);
+  }
+
+  renderArticle()
