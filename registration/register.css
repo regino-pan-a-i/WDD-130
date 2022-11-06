@@ -35,7 +35,14 @@
   }
   fieldset {
     margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
   }
+  .add{
+    grid-column: 1/2;
+  }
+  
   input,
   select,
   textarea {
