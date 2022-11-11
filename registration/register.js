@@ -1,7 +1,7 @@
 var count = 1
 console.log(count);
 function increaseCount(count){
-    return count;
+    return count ++;
 }
 
 console.log(count);
@@ -58,12 +58,34 @@ function renderForm(){
 //document.getElementById('add').addEventListener('click', increaseCount(count));
 document.getElementById('add').addEventListener('click',renderForm, increaseCount(count));
 
-//document.getElementsByTagName('form')[0].addEventListener('submit')
+document.getElementsByTagName('form').addEventListener('submit')
 
-//Since we will be adding a pretty complex set of HTML, let's create a function called participantTemplate(count) 
-//where count is the current number of participants shown.
-//To make the ids unique in our template remember that we can do something like this: 
-//`<section class="participant${count}">` You should add the count to each id in the template.
-//When it is time to insert the new HTML into the form, take a look at insertAdjacentHTML(). 
-//Notice that we can insert something beforebegin. In other words if we select the add button element, 
-//and insert beforebegin it will place our new participant right where we want it.
+//Add an event listener to the form. We are listening for a submit event.
+//On submit we need to keep the form from doing what it normally would...which is to reload the page.
+//Then we need to find all of the fee inputs. There will be one for each participant that has been added. 
+//The totals from those fields need to be summed up.
+//Get the adult name from the form.
+//Hide the Form, and show the summary element. Insert the following message into the summary element: 
+//"Thank you NAME for registering. You have registered N participants and owe $N in Fees."
+
+function submitForm(event) {
+    event.preventDefault();
+    // do the rest of the stuff
+}
+
+
+function totalFees() {
+    // the selector below lets us grab any element that has an id that begins with "fee"
+    let feeElements = document.querySelectorAll("[id^=fee]");
+    console.log(feeElements);
+    // querySelectorAll returns a NodeList. It's like an Array, but not exactly the same.
+    // The line below is an easy way to convert something that is list-like to an actual Array so we can use all of the helpful Array methods...like reduce
+    // The "..." is called the spread operator. It "spreads" apart the list, then the [] we wrapped it in inserts those list items into a new Array.
+    feeElements = [...feeElements];
+    // sum up all of the fees. Something like Array.reduce() could be very helpful here :) Or you could use a Array.forEach() as well.
+    const feeTotal = feeElements.reduce((total,item) => total + parseFloat(item.value))
+    // once you have your total make sure to return it!
+    
+  }
+
+
