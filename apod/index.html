@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nasa Astronomy Picture of the Day</title>
-    <link rel="stylesheet" href="apod.css">
-    <script src="apod.js" defer></script>
-    
-</head>
-<body>
-    
-</body>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Nasa Astronomy Picture of the Day</title>
+            <link rel="stylesheet" href="apod.css">
+            <script src="apod.js" defer></script>
+            
+        </head>
+        <body>
+            <header>
+                <h1>🪐 NASA Astronomy Picture of the Day (APOD)</h1>
+            </header>
+            <main>
+                <form class="form">
+                    <label>Date</label>
+                    <input id="date" type="date" name="date" placeholde="Date" required>
+                </form>
+                <section class="errorMessage">
+                    <section class="hide"></section>
+
+                </section>
+                <div class="mainInfo">
+                    
+                </div>
+            </main>
+            <footer>
+                <p>Information provided by NASA through their <a href="https://apod.nasa.gov/apod/astropix.html">
+                    "Astronomy Picture of the Day"</a> service.</p>
+            </footer>
+            
+            
+        </body>
 </html>

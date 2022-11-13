@@ -1,12 +1,12 @@
-var count = 1
+var count = 0
 console.log(count);
-function increaseCount(count){
+function increaseCount(){
     return count ++;
 }
 
 console.log(count);
 
-function participantTemplate(count){
+function participantTemplate(){
     count++;
     
     return `<section class="participant${count}">
