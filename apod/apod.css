@@ -31,10 +31,12 @@ main{
     padding: 0.5em;
 }
 header{
+    display: flex;
     margin: 1em;
     padding: 0.5em;
     color:#313D5A;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     border-bottom-style: solid;
     border-color:#313D5A;
 }
