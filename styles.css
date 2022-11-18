@@ -8,3 +8,23 @@ p {
     background-color: blue;
     font-size: 30px;
 }
+
+:root{
+    --quote-color: blue;
+    --quote-with: 66ch;
+}
+.quote{
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: var(--quote-with);
+}
+.quote span{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    color: var(--quote-color);
+}
+.quote .author{
+    text-align: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
