@@ -1,3 +1,10 @@
+:root {
+    --dark-blue: #313d5a;
+    --platinum: #eaeaea;
+    --lilac: #73628a;
+    --fire-opal: #e3655b;
+}
+
 body{
     padding: 2em;
     font-size: 20px;
@@ -17,7 +24,7 @@ h1,h2,h3{
 
 .errorMessage{
     margin: 1em;
-    background-color: #E3655B;
+    background-color: var(--fire-opal);
     color: #EAEAEA;
     padding: 0.5em;
 }
@@ -26,9 +33,19 @@ main{
     margin: 2em;
 }
 .form{
+    font-family:"Courier New", Courier, monospace;
     margin: 1em;
-    background-color: #EAEAEA	;
+    background-color: var(--platinum);
+    padding: 1em;
+}
+
+button{
     padding: 0.5em;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: var(--lilac);
+    color: white;
+    border: 0;
 }
 header{
     display: flex;
@@ -44,7 +61,9 @@ header{
 .photo{
    
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2em;
+
 
 }
 
@@ -55,12 +74,16 @@ header{
     grid-column: 1/2;
 }
 
+.info{
+    grid-column:2/3;
+}
+
 footer{
     margin: 1em;
     padding: 0.5em;
-    color:#313D5A;
+    color: var(--dark-blue);
     align-content: center;
     border-top-style: solid;
-    border-color:#313D5A;
+    border-color: var(--dark-blue);
 }
 
