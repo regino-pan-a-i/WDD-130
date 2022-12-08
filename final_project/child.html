@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="child.css" rel="stylesheet">
+    <script src="child.js" defer></script>
+    <title>Search</title>
+
 </head>
+<header>
+    <img src="logo.png" alt="logo">
+    <h1>Catch a Flight</h1>
+</header>
+
 <body>
+    <section class="info">
+        <section id="Search">
+            <h2>Search by...</h2>
+            <form>
+                <label for="name">Airline:</label>
+                <input type="text" id="ariline" placeholder='"World Airlines"'><br>
+                <h2>Or...</h2>
+                <label for="flight">Flight #:</label>
+                <input type="text" id="flilghtnum" placeholder="####"><br>
+                <!--<label for="date">Date:</label>
+                //<input type="date" id="date"><br>-->
+                <input type="submit" value="Submit">
+            </form>
+            <section id="results">
+                <h3>Results</h3>
+                <p>Flight:    ###</p>
+                <p>Departure: ###</p>
+                <p>Arrival:   ###</p>
+                <p>Status:    ###</p>
     
+            </section>
+        </section>
+        <section id="images">
+            <!--<h3>Departure city:</h3>
+            <img src="waiting.jpeg" alt="placeholder">
+            <h3>Arrival city:</h3>
+            <img src="waiting.jpeg" alt="placeholder">-->
+        </section>
+    </section>
 </body>
+
 </html>
