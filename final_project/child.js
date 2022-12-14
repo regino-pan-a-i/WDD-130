@@ -39,10 +39,12 @@ function airlineTemplate(data){
     return `
     <div class="results">
         <h3>Results</h3>
-        <p>Flight:   ${data[0]["flight"].iataNumber}</p>
+        <p>Flight:    ${data[0]["flight"].iataNumber}</p>
         <p> Departure:${data[0]["departure"].iataCode}</p>
         <p> Arrival:  ${data[0]["arrival"].iataCode}</p>
         <p> Status:   ${data[0]["status"]}</p>
+        <p> Latitude: ${data[0]["geography"].latitude}</p>
+        <p> Longitude:${data[0]["geography"].longitude}</p>
     </div>`;
 
 
